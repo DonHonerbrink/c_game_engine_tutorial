@@ -70,14 +70,34 @@ PALReturn pal_window_terminate(PALWindow *window)
 
     window->priv.window = NULL;
 
+    int glfw_error;
+
     glfwTerminate();
+
+    glfw_error = glfwGetError(NULL);
+
+    if(glfw_error != GLFW_NO_ERROR)
+        return PAL_ERROR;
+
 
     return PAL_OK;
 }
 
 PALReturn pal_window_set_title(PALWindow *window, const char *title)
 {
-     glfwSetWindowTitle(window->priv.window, title);
+    int glfw_error;
+
+    if(!window->priv.window)
+        return PAL_GLFW_NOT_INITIALIZED_ERROR;
+
+    glfwSetWindowTitle(window->priv.window, title);
+
+    glfw_error = glfwGetError(NULL);
+
+    if(glfw_error != GLFW_NO_ERROR)
+        return PAL_ERROR;
+
+    return PAL_OK;
 }
 
 PALReturn pal_window_set_size(PALWindow *window, unsigned int width, unsigned int height)
@@ -137,6 +157,7 @@ PALReturn pal_window_get_framebuffer_size(PALWindow *window, unsigned int *width
         return PAL_GLFW_NOT_INITIALIZED_ERROR;
 
     glfwGetFramebufferSize(window->priv.window, width, height);
+
     glfw_error = glfwGetError(NULL);
 
     if(glfw_error != GLFW_NO_ERROR)
@@ -150,6 +171,7 @@ PALReturn pal_window_poll(PALWindow *window)
     int glfw_error;
 
     glfwPollEvents();
+
     glfw_error = glfwGetError(NULL);
 
     if(glfw_error != GLFW_NO_ERROR)
@@ -163,6 +185,8 @@ PALReturn pal_window_swap_buffers(PALWindow *window)
     int glfw_error;
 
     glfwSwapBuffers(window->priv.window);
+
+    glfw_error = glfwGetError(NULL);
 
     if(glfw_error != GLFW_NO_ERROR)
         return PAL_ERROR;
