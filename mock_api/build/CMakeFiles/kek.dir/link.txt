@@ -1,2 +1,0 @@
-/usr/bin/ar qc libkek.a  CMakeFiles/kek.dir/src/example.c.o CMakeFiles/kek.dir/src/kek.c.o CMakeFiles/kek.dir/src/kek_window.c.o CMakeFiles/kek.dir/src/pal_main.c.o CMakeFiles/kek.dir/src/pal_window_glfw.c.o
-/usr/bin/ranlib libkek.a

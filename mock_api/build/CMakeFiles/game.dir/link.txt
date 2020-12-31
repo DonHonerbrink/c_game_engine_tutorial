@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/game.dir/src/example.c.o CMakeFiles/game.dir/src/kek.c.o CMakeFiles/game.dir/src/kek_window.c.o CMakeFiles/game.dir/src/pal_main.c.o CMakeFiles/game.dir/src/pal_window_glfw.c.o  -o game -ldl -lm -lpthread -lX11 -lGL deps/glfw/src/libglfw3.a libglad.a -lpthread /usr/lib/x86_64-linux-gnu/librt.so -lm -ldl 
