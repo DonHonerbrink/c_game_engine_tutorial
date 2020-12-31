@@ -174,26 +174,3 @@ PALReturn pal_window_swap_buffers(PALWindow *window)
     return PAL_OK;
 }
 
-PALReturn pal_window_set_keyboard_callback(PALWindow *window, PALKeyboardFunc fn, void *context)
-{
-}
-
-PALReturn pal_window_set_gamepad_callback(PALWindow *window, PALGamepadFunc fn, void *context)
-{
-}
-
-PALReturn pal_window_set_mouse_button_callback(PALWindow *window, PALMouseButtonFunc fn, void *context)
-{
-}
-
-PALReturn pal_window_set_mouse_position_callback(PALWindow *window, PALMousePositionFunc fn, void *context)
-{
-}
-
-PALReturn pal_window_set_mouse_scroll_callback(PALWindow *window, PALMouseScrollFunc fn, void *context)
-{
-}
-
-PALReturn pal_window_set_char_callback(PALWindow *window, PALCharFunc fn, void *context)
-{
-}

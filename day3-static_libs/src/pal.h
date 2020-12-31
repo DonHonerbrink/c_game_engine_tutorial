@@ -13,15 +13,6 @@ typedef struct PALFileChange PALFileChange;
 typedef struct PALTCPSocket PALTCPSocket;
 typedef struct PALUDPSocket PALUDPSocket;
 typedef struct PALWindow PALWindow;
-typedef void (*PALKeyboardFunc)(void);
-typedef void (*PALMouseButtonFunc)(void);
-typedef void (*PALMousePositionFunc)(void);
-typedef void (*PALMouseScrollFunc)(void);
-typedef void (*PALGamepadFunc)(void);
-typedef void (*PALThread)(void);
-typedef void (*PALCharFunc)(void);
-typedef void (*PALFileChangeFunc)(void);
-typedef void (*PALThreadFunc)(void);
 
 enum PALReturn {
     PAL_OK,
