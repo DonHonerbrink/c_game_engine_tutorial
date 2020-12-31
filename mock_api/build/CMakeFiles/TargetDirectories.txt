@@ -1,0 +1,10 @@
+/home/don/Projects/engine/complete/build/CMakeFiles/rebuild_cache.dir
+/home/don/Projects/engine/complete/build/CMakeFiles/edit_cache.dir
+/home/don/Projects/engine/complete/build/CMakeFiles/glad.dir
+/home/don/Projects/engine/complete/build/CMakeFiles/game.dir
+/home/don/Projects/engine/complete/build/CMakeFiles/kek.dir
+/home/don/Projects/engine/complete/build/deps/glfw/CMakeFiles/rebuild_cache.dir
+/home/don/Projects/engine/complete/build/deps/glfw/CMakeFiles/edit_cache.dir
+/home/don/Projects/engine/complete/build/deps/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/don/Projects/engine/complete/build/deps/glfw/src/CMakeFiles/glfw.dir
+/home/don/Projects/engine/complete/build/deps/glfw/src/CMakeFiles/edit_cache.dir
