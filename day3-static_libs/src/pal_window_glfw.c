@@ -155,10 +155,6 @@ PALReturn pal_window_poll(PALWindow *window)
     if(glfw_error != GLFW_NO_ERROR)
         return PAL_ERROR;
 
-    //todo: move me
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
     return PAL_OK;
 }
 
